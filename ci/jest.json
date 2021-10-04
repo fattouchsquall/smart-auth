@@ -1,0 +1,31 @@
+{
+  "verbose": true,
+  "rootDir": "../",
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "coverageReporters": [
+    "text",
+    "clover",
+    "html"
+  ],
+  "testEnvironment": "node",
+  "testMatch": [
+    "**/tests/**/*.spec.ts"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!<rootDir>/node_modules/",
+    "!<rootDir>/src/documents/*.ts",
+    "!<rootDir>/src/models/*.ts"
+  ],
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/dist"
+  ],
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  }
+}
